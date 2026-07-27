@@ -2,8 +2,8 @@ package me.alpha432.oyvey.features.modules.movement;
 
 import me.alpha432.oyvey.features.modules.Module;
 
-public class ReverseStepModule extends Module {
-    public ReverseStepModule() {
+public class flight extends Module {
+    public flight() {
         super("flight", "flight flall but not", Category.MOVEMENT);
     }
 
