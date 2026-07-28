@@ -18,13 +18,13 @@ public class StepModule extends Module {
         if (nullCheck()) {
             return;
         }
-        mc.player.getAbilities().mayFly = true;
+        mc.player.getAbilities().mayfly = true;
     }
 
     @Override
     public void onDisable() {
         if (nullCheck()) return;
-        mc.player.getAbilities().mayFly = true;
+        mc.player.getAbilities().mayfly = true;
     }
 
     @Override
