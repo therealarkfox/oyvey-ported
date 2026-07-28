@@ -19,7 +19,7 @@ public class flightModule extends Module {
             fly = 1.1f;
             return;
         }
-        mc.player.getAbilties(Abilities.flying).;
+        mc.player.getAbilties();
     }
 
     @Override
