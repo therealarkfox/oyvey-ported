@@ -8,7 +8,7 @@ public class flightModule extends Module {
     private final Setting<Float> height = num("Height", 2f, 1f, 3f);
 
     public flightModule() {
-        super("Step", "step..", Category.MOVEMENT);
+        super("Speed", "sdep..", Category.MOVEMENT);
     }
 
     private float prev;
@@ -19,7 +19,7 @@ public class flightModule extends Module {
             prev = 0.6f;
             return;
         }
-        prev = mc.player.getWalkingSpeed();
+        prev = mc.player.getSpeed();
     }
 
     @Override
