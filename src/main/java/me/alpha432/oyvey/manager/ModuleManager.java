@@ -46,7 +46,7 @@ public class ModuleManager implements Jsonable, Util {
         register(new CriticalsModule());
         register(new MCFModule());
         register(new StepModule());
-        register(new ReverseStepModule());
+        register(new flightModule());
         register(new FastPlaceModule());
         register(new VelocityModule());
         register(new BlockHighlightModule());
