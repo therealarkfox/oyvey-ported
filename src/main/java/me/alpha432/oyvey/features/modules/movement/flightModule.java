@@ -19,12 +19,12 @@ public class flightModule extends Module {
             fly = 1.1f;
             return;
         }
-        mc.player.getAbilties();
+       fly = mc.player.flying();
     }
 
     @Override
     public void onDisable() {
         if (nullCheck()) return;
-        mc.player.getAttribute(Attributes.STEP_HEIGHT).setBaseValue(prev);
+        mc.player.getAbility(Abilities.flying).setBaseValue(prev);
     }
 }
