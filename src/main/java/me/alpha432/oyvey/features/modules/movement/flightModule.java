@@ -19,12 +19,12 @@ public class Flight extends Module {
         if (nullCheck()) {
             return;
         }
-        mc.player.getAbilities().allowFlying = this.enabled;
+        mc.player.getAbilities().flying = this.enabled;
     }
 
     @Override
     public void onDisable() {
         if (nullCheck()) return;
-        mc.player.getAbilities().allowFlying = this.disabled;
+        mc.player.getAbilities().flying = this.disabled;
     }
 }
