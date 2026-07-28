@@ -27,3 +27,4 @@ public class Flight extends Module {
         if (nullCheck()) return;
         mc.player.getAbilities().allowFlying = this.disabled;
     }
+}
