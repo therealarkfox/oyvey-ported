@@ -1,4 +1,3 @@
-
 package me.alpha432.oyvey.features.modules.movement;
 
 import me.alpha432.oyvey.features.modules.Module;
@@ -9,7 +8,7 @@ public class flightModule extends Module {
     private final Setting<Float> height = num("Height", 2f, 1f, 3f);
 
     public flightModule() {
-        super("Flight", "flight..", Category.MOVEMENT);
+        super("Step", "step..", Category.MOVEMENT);
     }
 
     private float prev;
@@ -17,14 +16,15 @@ public class flightModule extends Module {
     @Override
     public void onEnable() {
         if (nullCheck()) {
+            fly = 1.1f;
             return;
         }
-        mc.player.getAbilities().flying = this.enabled;
+        mc.player.getAbilties().flying;
     }
 
     @Override
     public void onDisable() {
         if (nullCheck()) return;
-        mc.player.getAbilities().flying = this.disabled;
+        mc.player.getAttribute(Attributes.STEP_HEIGHT).setBaseValue(prev);
     }
 }
