@@ -20,7 +20,7 @@ public class flightModule extends Module {
             float modifier = 1.0f;
             return;
         }
-        this.getAbilities().flying {
+        this.getAbilities().flying; {
           modifier *= 1.1F;
       }
     }
@@ -28,7 +28,7 @@ public class flightModule extends Module {
     @Override
     public void onDisable() {
         if (nullCheck()) return;
-        this.getAbilities().flying {
+        this.getAbilities().flying; {
           modifier = 1.0F;
       }
     }
