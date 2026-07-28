@@ -31,6 +31,6 @@ public class flightModule extends Module {
     @Override
     public void onTick() {
         if (nullCheck()) return;
-        mc.player.getAttribute(MOVEMENT_SPEED).setBaseValue(height.getValue());
+        mc.player.getAttribute(Attributes,MOVEMENT_SPEED).setBaseValue(height.getValue());
     }
 }
