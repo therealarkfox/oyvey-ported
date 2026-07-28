@@ -30,6 +30,6 @@ public class StepModule extends Module {
     @Override
     public void onTick() {
         if (nullCheck()) return;
-        mc.player.getAbilities().mayFly = true;
+        mc.player.getAbilities().mayfly = true;
     }
 }
