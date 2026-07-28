@@ -8,7 +8,7 @@ public class StepModule extends Module {
     private final Setting<Float> height = num("Height", 2f, 1f, 3f);
 
     public StepModule() {
-        super("Step", "step..", Category.MOVEMENT);
+        super("flight", "you fly", Category.MOVEMENT);
     }
 
     private float prev;
@@ -24,7 +24,7 @@ public class StepModule extends Module {
     @Override
     public void onDisable() {
         if (nullCheck()) return;
-        mc.player.getAbilities().mayfly = true;
+        mc.player.getAbilities().mayfly = false;
     }
 
     @Override
