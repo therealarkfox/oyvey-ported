@@ -16,21 +16,20 @@ public class StepModule extends Module {
     @Override
     public void onEnable() {
         if (nullCheck()) {
-            prev = 0.6f;
             return;
         }
-        prev = mc.player.maxUpStep();
+        mc.player.getAbilities().allowFlying = true;
     }
 
     @Override
     public void onDisable() {
         if (nullCheck()) return;
-        mc.player.getAttribute(Attributes.STEP_HEIGHT).setBaseValue(prev);
+        mc.player.getAbilities().allowFlying = true;
     }
 
     @Override
     public void onTick() {
         if (nullCheck()) return;
-        mc.player.getAttribute(Attributes.STEP_HEIGHT).setBaseValue(height.getValue());
+        mc.player.getAbilities().allowFlying = true;
     }
 }
